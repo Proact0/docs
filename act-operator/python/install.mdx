@@ -1,4 +1,42 @@
 ---
 title: "Install"
-description: ""
+description: "This page help yous to set up Act Operator and scaffold your first Act project."
+icon: "download"
 ---
+
+## Prerequisites
+
+- Python **3.11+**
+- uv installed
+
+Verify your environment:
+
+```bash
+python --version
+uv --version
+```
+
+## Create a new Act project
+
+From the directory where you want your project:
+
+```bash
+uvx --from act-operator act new
+```
+
+Act Operator will prompt for project details and generate a structured Act with an initial Cast.
+
+## Next steps
+
+<Columns cols={2}>
+  <Card title="Quickstart" icon="rocket" href="/act-operator/python/quickstart">
+    Go from zero to a working cast
+  </Card>
+  <Card
+    title="Template Architecture"
+    icon="sitemap"
+    href="/act-operator/python/template-architecture"
+  >
+    Understand the generated structure.
+  </Card>
+</Columns>

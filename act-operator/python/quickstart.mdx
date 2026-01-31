@@ -1,7 +1,49 @@
 ---
 title: "Quickstart"
-description: ""
-icon: "map"
+description: "This page assumes you already reviewed the Install page and have Python 3.11+ and uv ready."
+icon: "rocket"
 ---
 
-2
+## Create a new Act
+
+From the directory where you want your project:
+
+```bash
+uvx --from act-operator act new
+```
+
+Act Operator will prompt for a project name, an initial Cast name, and other metadata.
+It then generates a structured Act project with a starter Cast.
+
+## Enter the project
+
+```bash
+cd <your-project>
+```
+
+## Install dependencies
+
+```bash
+uv sync
+```
+
+## Orient yourself
+
+- Read `README.md` for project-specific instructions
+- Open `CLAUDE.md` for architecture context and AI collaboration guidance
+- Find your initial Cast under `casts/` and start adding graph logic there
+
+## Next steps
+
+<Columns cols={2}>
+  <Card title="Overview" icon="map" href="/act-operator/overview">
+    Review concepts and vocabulary
+  </Card>
+  <Card
+    title="Template Architecture"
+    icon="sitemap"
+    href="/act-operator/python/template-architecture"
+  >
+    Understand the generated structure.
+  </Card>
+</Columns>

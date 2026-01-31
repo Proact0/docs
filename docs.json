@@ -16,11 +16,12 @@
           {
             "group": "Overview",
             "pages": [
-              "act-operator/python/overview"
+              "act-operator/overview"
             ]
           },
           {
             "group": "Get started",
+            "icon": "rocket",
             "pages": [
               "act-operator/python/install",
               "act-operator/python/quickstart",
@@ -33,13 +34,13 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Official Github",
+          "href": "https://github.com/Proact0/act-operator",
+          "icon": "github"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "anchor": "Official Web",
+          "href": "https://www.proact0.org",
           "icon": "newspaper"
         }
       ]

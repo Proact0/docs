@@ -1,6 +1,80 @@
 ---
-title: "Template architecure"
-description: ""
+title: "Template architecture"
+description: "This page explains what `act new` generates and how the template is organized."
+icon: "sitemap"
 ---
 
-3
+## How generation works
+
+Act Operator renders the template located in `act_operator/scaffold/`.
+The inputs used to render the template are defined in `cookiecutter.json`:
+
+- `act_name`, `act_slug`, `act_snake`
+- `cast_name`, `cast_slug`, `cast_snake`, `cast_pascal`
+- `language`
+
+Template files use `{{ cookiecutter.* }}` placeholders to inject those values into file names and content.
+
+## Template root (Act project)
+
+The generated Act project includes:
+
+- `casts/` for Cast packages (each Cast is an independent graph)
+- `tests/` with Cast and node tests
+- `.claude/skills/` with built-in Skills for AI collaboration
+- `.github/workflows/` with CI workflows
+- `pyproject.toml` for project configuration
+- `langgraph.json` for graph configuration
+- `.env.example` for environment variables
+- `README.md` for project-specific instructions
+
+## Cast package layout
+
+Each Cast is generated under `casts/<cast>/` and includes:
+
+```text
+casts/
+  <cast>/
+    graph.py
+    pyproject.toml
+    README.md
+    modules/
+      agents.py
+      conditions.py
+      middlewares.py
+      models.py
+      nodes.py
+      prompts.py
+      state.py
+      tools.py
+      utils.py
+```
+
+## Skills in the template
+
+Built-in Skills are scaffolded under `.claude/skills/`:
+
+- `architecting-act`
+- `developing-cast`
+- `engineering-act`
+- `testing-cast`
+
+Each Skill includes a `SKILL.md` file that AI tools can discover and follow.
+
+## Tests
+
+The template includes two test areas:
+
+- `tests/cast_tests/` for Cast-level tests
+- `tests/node_tests/` for node-level tests
+
+## Next steps
+
+<Columns cols={2}>
+  <Card title="Overview" icon="map" href="/act-operator/overview">
+    Review concepts and vocabulary
+  </Card>
+  <Card title="QuickStart" icon="rocket" href="/act-operator/python/quickstart">
+    Go from zero to a working cast.
+  </Card>
+</Columns>
