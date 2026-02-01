@@ -1,0 +1,69 @@
+---
+title: "Overview"
+description: "Streamline your LangGraph development with Act Operator"
+icon: "map"
+---
+
+Act Operator is a **CLI and project standard** for building LangGraph 1.0+ applications with a clear, modular architecture.
+If you are coming from the intro, this page explains what the tool provides and how the structure fits together.
+
+It gives you:
+
+- A standardized project model called an **Act**
+- A monorepo-friendly layout for multiple graphs (**Casts**)
+- Built-in **Skills** for AI-assisted architecture, development, and testing
+- Explicit context via **CLAUDE.md** files so tools and teammates stay aligned
+
+## Why this exists
+
+LangGraph makes it easy to build agentic workflows.
+What it does not give you is a standard way to organize them as the project grows.
+
+Act Operator makes that structure explicit so graphs remain understandable, testable, and evolvable.
+
+## How it works
+
+- `act new` scaffolds an Act project with a consistent layout
+- Each Cast is an independent graph package with its own state, nodes, and dependencies
+- Skills guide architecture → implementation → testing workflows
+- CLAUDE.md captures decisions so AI tools do not guess
+
+## Key concepts
+
+**Act**
+The standardized project structure for a LangGraph application.
+
+**Cast**
+An independent graph package inside an Act project.
+
+**Skill**
+Instruction folders that AI tools can discover and follow.
+
+**CLAUDE.md**
+Design context and specifications for the project and each Cast.
+
+## Quick start
+
+Requires Python 3.11+.
+
+```bash
+uvx --from act-operator act new
+```
+
+## Next steps
+
+<Columns cols={2}>
+  <Card title="Install" icon="download" href="/act-operator/python/install">
+    Install and setup details
+  </Card>
+  <Card title="QuickStart" icon="rocket" href="/act-operator/python/quickstart">
+    Go from zero to a working cast.
+  </Card>
+  <Card
+    title="Template Architecture"
+    icon="sitemap"
+    href="/act-operator/python/template-architecture"
+  >
+    Understand the generated structure.
+  </Card>
+</Columns>

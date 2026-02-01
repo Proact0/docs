@@ -1,97 +1,95 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "Act Operator"
+description: "Scaffold and scale LangGraph projects with confidence"
 ---
 
-## Setting up
+> **Scaffold structured LangGraph 1.0+ projects and keep them maintainable as they grow.**
 
-Get your documentation site up and running in minutes.
+Act Operator is a **CLI and project standard** that keeps that drift from happening.
+It makes Acts and Casts explicit, and it provides AI Skills that keep architecture, development,
+and testing aligned as the project grows.
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
+If your LangGraph project:
 
-## Make it yours
+- Started clean, but became hard to reason about
+- Grew beyond a single graph and turned messy
+- Was difficult to test, refactor, or explain to another developer
 
-Design a docs site that looks great and empowers your users.
+**Act Operator exists to solve exactly that.**
+
+## Why Act Operator
+
+LangGraph makes it easy to build agentic workflows.
+What it does not give you is a standard way to organize them as they grow.
+
+Act Operator provides:
+
+- A clear, modular structure for state, nodes, agents, and tools
+- A scalable way to manage multiple graphs as Cast packages
+- AI-native development via built-in Skills and explicit project context
+- Opinionated defaults that reduce architectural guesswork
+
+## 30-second quick start
+
+Requires Python 3.11+.
+
+```bash
+uvx --from act-operator act new
+```
+
+Want the full setup flow? Start with **Install** and then go to **Quickstart** below.
+
+## How it works
+
+- `act new` scaffolds a standardized Act project
+- Each Cast is an independent graph package with explicit boundaries
+- CLAUDE.md files store design context for humans and AI tools
+- Skills guide architecture, implementation, and testing workflows
+
+## What is an Act
+
+An **Act** is a structured, modular unit of a LangGraph application.
+
+Think of it as:
+
+- A bounded graph with a clear purpose
+- A package with explicit state, nodes, agents, and dependencies
+- A design artifact that can be reasoned about, tested, and refactored
+- A collaboration surface for both humans and AI agents
+
+Multiple Acts (called Casts) can live together in a single repository,
+forming a maintainable monorepo for complex agentic systems.
+
+## Built for AI collaboration
+
+Act Operator is designed for AI-assisted development from day one.
+
+Each project includes built-in Skills that allow AI tools to:
+
+- Understand your architecture before generating code
+- Ask the right questions instead of guessing
+- Follow consistent implementation and testing patterns
+- Evolve existing graphs without breaking structure
+
+## Next steps
+
+Pick a path based on where you are:
 
 <Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
+  <Card title="Overview" icon="map" href="/act-operator/overview">
+    Concepts, features, and target use cases.
+  </Card>
+  <Card title="Install" icon="download" href="/act-operator/python/install">
+    Install and setup details for Python projects.
+  </Card>
+  <Card title="Quickstart" icon="rocket" href="/act-operator/python/quickstart">
+    Go from zero to a working cast fast.
   </Card>
   <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
+    title="Template architecture"
+    icon="sitemap"
+    href="/act-operator/python/template-architecture"
   >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
+    Understand the generated structure and conventions.
   </Card>
 </Columns>
-
-## Create beautiful pages
-
-Everything you need to create world-class documentation.
-
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
-
-## Need inspiration?
-
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
