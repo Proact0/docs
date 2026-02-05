@@ -4,22 +4,22 @@ description: "Streamline your LangGraph development with Act Operator"
 icon: "map"
 ---
 
-Act Operator is a **CLI and project standard** for building LangGraph 1.0+ applications with a clear, modular architecture.
-If you are coming from the intro, this page explains what the tool provides and how the structure fits together.
+Act Operator is a **CLI and project standard** for keeping LangGraph 1.0+ projects structured and maintainable.
 
-It gives you:
+This page is for readers who already know LangGraph but are new to Act Operator.
+The recommended flow is **Install → Quickstart → Template architecture** after this overview.
 
-- A standardized project model called an **Act**
-- A monorepo-friendly layout for multiple graphs (**Casts**)
-- Built-in **Skills** for AI-assisted architecture, development, and testing
-- Explicit context via **CLAUDE.md** files so tools and teammates stay aligned
+You will learn:
+
+- The problem Act Operator solves
+- What Act, Cast, Skill, and CLAUDE.md mean
+- How the scaffolded structure fits together
 
 ## Why this exists
 
-LangGraph makes it easy to build agentic workflows.
-What it does not give you is a standard way to organize them as the project grows.
-
-Act Operator makes that structure explicit so graphs remain understandable, testable, and evolvable.
+LangGraph makes it easy to build agentic workflows, but it does not prescribe how to
+organize them as the project grows. Act Operator makes the structure explicit so graphs
+stay understandable, testable, and evolvable.
 
 ## How it works
 
@@ -41,14 +41,6 @@ Instruction folders that AI tools can discover and follow.
 
 **CLAUDE.md**
 Design context and specifications for the project and each Cast.
-
-## Quick start
-
-Requires Python 3.11+.
-
-```bash
-uvx --from act-operator act new
-```
 
 ## Next steps
 

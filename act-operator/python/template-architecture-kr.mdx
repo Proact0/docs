@@ -1,0 +1,87 @@
+---
+title: "템플릿 아키텍처"
+description: "`act new`가 생성하는 내용과 템플릿 구성 방식을 설명합니다."
+icon: "sitemap"
+---
+
+이 페이지는 `act new`로 생성된 구조가 **왜 그렇게 생겼는지**를 이해하는 데 목적이 있습니다.
+빠른 시작에서 프로젝트를 만든 뒤, 확장하기 전에 한번 훑어보는 것을 권장합니다.
+
+## 생성 방식
+
+Act Operator는 `act_operator/scaffold/`에 있는 템플릿을 렌더링해 사용합니다.
+템플릿 렌더링에 쓰는 입력값은 `cookiecutter.json`에 정의되어 있습니다:
+
+- `act_name`, `act_slug`, `act_snake`
+- `cast_name`, `cast_slug`, `cast_snake`, `cast_pascal`
+- `language`
+
+템플릿 파일은 `{{ cookiecutter.* }}` 플레이스홀더를 사용해 해당 값을 파일 이름과 내용에 주입합니다.
+
+## 템플릿 루트(Act 프로젝트)
+
+생성된 Act 프로젝트에는 다음이 포함됩니다:
+
+- Cast 패키지를 위한 `casts/`(각 Cast는 독립적인 그래프)
+- Cast 및 노드 테스트가 있는 `tests/`
+- AI 협업을 위한 기본 Skills가 있는 `.claude/skills/`
+- CI 워크플로가 있는 `.github/workflows/`
+- 프로젝트 구성용 `pyproject.toml`
+- 그래프 구성용 `langgraph.json`
+- 환경 변수용 `.env.example`
+- 프로젝트별 지침용 `README.md`
+
+## Cast 패키지 레이아웃
+
+각 Cast는 `casts/<cast>/` 아래에 생성되며 다음 항목을 포함합니다:
+
+```text
+casts/
+  <cast>/
+    graph.py
+    pyproject.toml
+    README.md
+    modules/
+      agents.py
+      conditions.py
+      middlewares.py
+      models.py
+      nodes.py
+      prompts.py
+      state.py
+      tools.py
+      utils.py
+```
+
+## 템플릿의 Skills
+
+기본 Skills는 `.claude/skills/` 아래에 스캐폴딩됩니다:
+
+- `architecting-act`
+- `developing-cast`
+- `engineering-act`
+- `testing-cast`
+
+각 Skill에는 AI 도구가 발견하고 따를 수 있는 `SKILL.md` 파일이 포함됩니다.
+
+## 테스트
+
+템플릿에는 두 가지 테스트 영역이 포함됩니다:
+
+- Cast 수준 테스트용 `tests/cast_tests/`
+- 노드 수준 테스트용 `tests/node_tests/`
+
+## 다음 단계
+
+<Columns cols={2}>
+  <Card title="개요" icon="map" href="/act-operator/overview-kr">
+    개념과 용어를 다시 확인합니다
+  </Card>
+  <Card
+    title="빠른 시작"
+    icon="rocket"
+    href="/act-operator/python/quickstart-kr"
+  >
+    0에서 동작하는 Cast까지.
+  </Card>
+</Columns>
