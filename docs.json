@@ -9,42 +9,84 @@
   },
   "favicon": "/favicon.png",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "act-operator",
-        "groups": [
+        "language": "en",
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Official Github",
+              "href": "https://github.com/Proact0/act-operator",
+              "icon": "github"
+            },
+            {
+              "anchor": "Official Web",
+              "href": "https://www.proact0.org",
+              "icon": "newspaper"
+            }
+          ]
+        },
+
+        "tabs": [
           {
-            "group": "Overview",
-            "pages": [
-              "act-operator/overview"
+            "tab": "act-operator",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": ["index", "act-operator/overview"]
+              },
+              {
+                "group": "Get started",
+                "icon": "rocket",
+                "pages": [
+                  "act-operator/python/install",
+                  "act-operator/python/quickstart",
+                  "act-operator/python/template-architecture"
+                ]
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "language": "ko",
+        "global": {
+          "anchors": [
+            {
+              "anchor": "공식 Github",
+              "href": "https://github.com/Proact0/act-operator",
+              "icon": "github"
+            },
+            {
+              "anchor": "공식 웹사이트",
+              "href": "https://www.proact0.org",
+              "icon": "newspaper"
+            }
+          ]
+        },
+
+        "tabs": [
           {
-            "group": "Get started",
-            "icon": "rocket",
-            "pages": [
-              "act-operator/python/install",
-              "act-operator/python/quickstart",
-              "act-operator/python/template-architecture"
+            "tab": "act-operator",
+            "groups": [
+              {
+                "group": "개요",
+                "pages": ["index-kr", "act-operator/overview-kr"]
+              },
+              {
+                "group": "시작하기",
+                "icon": "rocket",
+                "pages": [
+                  "act-operator/python/install-kr",
+                  "act-operator/python/quickstart-kr",
+                  "act-operator/python/template-architecture-kr"
+                ]
+              }
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Official Github",
-          "href": "https://github.com/Proact0/act-operator",
-          "icon": "github"
-        },
-        {
-          "anchor": "Official Web",
-          "href": "https://www.proact0.org",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.png",
