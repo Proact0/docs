@@ -71,15 +71,15 @@
             "groups": [
               {
                 "group": "개요",
-                "pages": ["index-kr", "act-operator/overview-kr"]
+                "pages": ["ko/index", "ko/act-operator/overview"]
               },
               {
                 "group": "시작하기",
                 "icon": "rocket",
                 "pages": [
-                  "act-operator/python/install-kr",
-                  "act-operator/python/quickstart-kr",
-                  "act-operator/python/template-architecture-kr"
+                  "ko/act-operator/python/install",
+                  "ko/act-operator/python/quickstart",
+                  "ko/act-operator/python/template-architecture"
                 ]
               }
             ]
@@ -105,23 +105,11 @@
       "href": "https://dashboard.mintlify.com"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
-  },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/Proact0/act-operator",
+      "linkedin": "https://linkedin.com/company/mintlify",
+      "discord": "https://discord.gg/5sSByzYeWf"
     }
   }
 }
