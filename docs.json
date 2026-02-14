@@ -33,15 +33,15 @@
             "groups": [
               {
                 "group": "Overview",
-                "pages": ["index", "act-operator/overview"]
+                "pages": ["en/index", "en/act-operator/overview"]
               },
               {
                 "group": "Get started",
                 "icon": "rocket",
                 "pages": [
-                  "act-operator/python/install",
-                  "act-operator/python/quickstart",
-                  "act-operator/python/template-architecture"
+                  "en/act-operator/python/install",
+                  "en/act-operator/python/quickstart",
+                  "en/act-operator/python/template-architecture"
                 ]
               }
             ]
@@ -96,19 +96,14 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "jh.park@cloocus.com"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "footer": {
     "socials": {
       "github": "https://github.com/Proact0/act-operator",
-      "linkedin": "https://linkedin.com/company/mintlify",
+      "linkedin": "https://www.linkedin.com/company/proact0",
       "discord": "https://discord.gg/5sSByzYeWf"
     }
   }
