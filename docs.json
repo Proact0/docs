@@ -33,15 +33,15 @@
             "groups": [
               {
                 "group": "Overview",
-                "pages": ["index", "act-operator/overview"]
+                "pages": ["en/index", "en/act-operator/overview"]
               },
               {
                 "group": "Get started",
                 "icon": "rocket",
                 "pages": [
-                  "act-operator/python/install",
-                  "act-operator/python/quickstart",
-                  "act-operator/python/template-architecture"
+                  "en/act-operator/python/install",
+                  "en/act-operator/python/quickstart",
+                  "en/act-operator/python/template-architecture"
                 ]
               }
             ]
@@ -71,15 +71,15 @@
             "groups": [
               {
                 "group": "개요",
-                "pages": ["index-kr", "act-operator/overview-kr"]
+                "pages": ["ko/index", "ko/act-operator/overview"]
               },
               {
                 "group": "시작하기",
                 "icon": "rocket",
                 "pages": [
-                  "act-operator/python/install-kr",
-                  "act-operator/python/quickstart-kr",
-                  "act-operator/python/template-architecture-kr"
+                  "ko/act-operator/python/install",
+                  "ko/act-operator/python/quickstart",
+                  "ko/act-operator/python/template-architecture"
                 ]
               }
             ]
@@ -96,32 +96,15 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "jh.park@cloocus.com"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/Proact0/act-operator",
+      "linkedin": "https://www.linkedin.com/company/proact0",
+      "discord": "https://discord.gg/5sSByzYeWf"
     }
   }
 }
